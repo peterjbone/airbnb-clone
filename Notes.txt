@@ -1,5 +1,4 @@
 HYDRATION PROBLEMS
-
 - ClientOnly component ❌ NO PROBLEMS
 - currentUser properties: ✅ RESOLVED
  1. createdAt
@@ -9,6 +8,15 @@ HYDRATION PROBLEMS
 
 
  RESOLVED ISSUES
+ - Sign up with google (add your email to test users) ✅
+ - Sign up with github (the email already exists in mongoDB with other user)✅
 
- - Sign up with google (add your email to test users)
- - Sign up with github (the email already exists in mongoDB with other user)
+
+ SUMMARY OF PROJECT
+- Navbar: Logo, Searchbar, UserMenu (Modals: Rent, Register, Login)
+ + RentModal imports components: 
+  - CategoryInput (for categories)
+  - CountrySelect and Map (for location)
+  - Counter (for info)
+
+- Categories

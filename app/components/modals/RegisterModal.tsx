@@ -58,7 +58,7 @@ const RegisterModal = () => {
 		loginModal.onOpen();
 	}, []);
 
-	//* BODY OF REGISTER MODAL
+	//* BODY OF REGISTER MODAL | LOGIN WITH CREDENTIALS
 	//prettier-ignore
 	const bodyContent = (
     <div className="flex flex-col gap-4">
@@ -91,7 +91,7 @@ const RegisterModal = () => {
     </div>
   )
 
-	//* FOOTER OF REGISTER MODAL
+	//* FOOTER OF REGISTER MODAL | REGISTER WITH GOOGLE AND GITHUB
 	//prettier-ignore
 	const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
@@ -120,7 +120,9 @@ const RegisterModal = () => {
             className="
             text-neutral-800
             cursor-pointer
-            hover:underline">
+            hover:underline
+            decoration-white
+            ">
           Login
           </div>
         </div>

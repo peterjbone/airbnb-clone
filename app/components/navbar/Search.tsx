@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { BiSearch } from "react-icons/bi"
+import { BiSearch } from "react-icons/bi";
 
 const Search = () => {
 	return (
 		<div className="border-[1px] w-full md:w-auto py-2 rounded-full shadow-md transition cursor-pointer">
-			{/* Main Container of Buttons ☝*/}
-			{/* Sub Container of Buttons 👇*/}
+			{/* Main Container ☝*/}
+			{/* Sub Container 👇*/}
 			<div className="flex flex-row items-center justify-between">
-				{/* Begin of Buttons*/}
+				{/* Buttons*/}
 				<div className="text-sm font-semibold px-6">Anywhere</div>
 				<div className="hidden md:block text-sm  font-semibold px-6 border-x-[1px] flex-1 text-center">
 					Any week
@@ -19,10 +19,9 @@ const Search = () => {
 						<BiSearch />
 					</div>
 				</div>
-				{/* End of Buttons */}
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Search
+export default Search;

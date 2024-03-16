@@ -8,6 +8,7 @@ generator client {
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
 model User{
@@ -20,7 +21,6 @@ model User{
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   favoriteIds String[] @db.ObjectId
-
   accounts Account[]
   listings Listing[]
   reservations Reservation[]
