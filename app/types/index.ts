@@ -1,4 +1,12 @@
-import { User } from "@prisma/client";
+import { Listing, User } from "@prisma/client";
+
+//prettier-ignore
+export type SafeListing = Omit<
+  Listing,
+  "createdAt"
+  > & {
+  createdAt: string;
+}
 
 //prettier-ignore
 export type SafeUser = Omit<
