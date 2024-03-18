@@ -8,7 +8,6 @@ import getCurrentUser from "./actions/getCurrentUser";
 export default async function Home() {
 	const listings = await getListings();
 	const currentUser = await getCurrentUser();
-	//const isEmpty = true;
 
 	if (listings.length === 0) {
 		return (
@@ -23,7 +22,7 @@ export default async function Home() {
     <ClientOnly>
       <Container>
         <div className="
-          pt-24
+          
           grid
           grid-cols-1
           sm:grid-cols-2

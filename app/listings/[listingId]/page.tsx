@@ -10,6 +10,8 @@ interface IParams {
 
 // This is a server components (dont use hooks)
 const ListingPage = async ({ params }: { params: IParams }) => {
+	//console.log(params);
+
 	const listing = await getListingById(params);
 	const currentUser = await getCurrentUser();
 

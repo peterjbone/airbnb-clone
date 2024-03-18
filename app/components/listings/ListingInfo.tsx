@@ -7,10 +7,6 @@ import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
 import dynamic from "next/dynamic";
 
-const Map = dynamic(() => import("../Map"), {
-	ssr: false
-});
-
 interface ListingInfoProps {
 	user: SafeUser;
 	description: string;
@@ -38,6 +34,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
 }) => {
 	const { getByValue } = useCountries();
 	const coordinates = getByValue(locationValue)?.latlng;
+	const Map = dynamic(() => import("../Map"), { ssr: false });
 
 	//prettier-ignore
 	return ( 
@@ -81,7 +78,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
           {description}
       </div>
       <hr />
-      <Map center={coordinates}/>    
+      <Map center={coordinates} />    
     </div>
    );
 };
