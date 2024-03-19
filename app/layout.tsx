@@ -39,9 +39,9 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 					<RegisterModal />
 					<Navbar currentUser={currentUser} />
 				</ClientOnly>
-        <div className="w-full min-h-screen pb-20 pt-10">
-          {children}
-        </div>
+				<div className="relative z-10 w-full min-h-screen pb-20 pt-10">
+					{children}
+				</div>
 			</body>
 		</html>
 	);
