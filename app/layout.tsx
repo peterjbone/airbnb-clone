@@ -10,6 +10,7 @@ import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
 import RentModal from "./components/modals/RentModal";
 import ClientOnly from "./components/ClientOnly";
+import SearchModal from "./components/modals/SearchModal";
 
 //? Theme color for mobile
 export const viewport: Viewport = {
@@ -34,6 +35,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 			<body className={nunito.className}>
 				<ClientOnly>
 					<ToasterProvider />
+					<SearchModal />
 					<RentModal />
 					<LoginModal />
 					<RegisterModal />
