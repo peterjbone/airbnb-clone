@@ -22,9 +22,7 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 //? Metadata
 export const metadata: Metadata = {
-	title: "Airbnb - Clone",
-	description:
-		"This is a website clone of the official airbnb website, i am not the owner."
+	title: "Rent Properties 🏠"
 };
 
 //prettier-ignore
