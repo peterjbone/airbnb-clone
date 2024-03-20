@@ -1,5 +1,0 @@
-{
-	"build": {
-		"commands": ["npm install prisma -g", "prisma generate", "npm run build"]
-	}
-}
