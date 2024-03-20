@@ -21,8 +21,6 @@ const Home = async ({ searchParams }: HomeProps) => {
 		);
 	}
 
-	//throw new Error("Something went wrong");
-
 	//prettier-ignore
 	return (
     <ClientOnly>
