@@ -22,7 +22,12 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 //? Metadata
 export const metadata: Metadata = {
-	title: "Rent Properties 🏠"
+	title: "Rent Properties",
+	icons: {
+		icon: ["/favicon.ico?v=4"],
+		apple: ["/apple-touch-icon.png?v=4"],
+		shortcut: ["/apple-touch-icon.png"]
+	}
 };
 
 //prettier-ignore
