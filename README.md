@@ -4,6 +4,10 @@ This is a clone of the official Airbnb clone
 
 **Deployment**: N/A
 
+🚨 **Attention: Test account** 🚨
+
+Take into account that if you want to test all the features of the app in production, you MUST create an account with credentials because the sign up and login with Google and Github do not work in production (they only work locally)
+
 ## Installation
 
 Clone the project
@@ -48,15 +52,6 @@ npx prisma db push
 - Create account with credentials, with google and with github
 - Create a listing to rent your house
 - Create a reservation at someone else's property
-
-## Test Google Account 🚨(pls read this)🚨
-
-This account is used to test the application in the deployment, since login with credentials and with GitHub do not work in production.
-
-First you must open your browser and log in to Google using this account, and then simply log in with Google in the clone the airbnb
-
-- Email: test1user@gmail.com
-- Password: 12345678aB$
 
 ## License
 
