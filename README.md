@@ -2,6 +2,8 @@
 
 This is a clone of the official Airbnb clone
 
+**Deployment**: N/A
+
 ## Installation
 
 Clone the project
@@ -16,6 +18,14 @@ Install the dependencies
 npm install
 ```
 
+Set the Prisma with MongoDB Atlas
+
+```bash
+npm i --save-dev prisma@latest
+npm i @prisma/client@latest
+npx prisma db push
+```
+
 ## Set the environment variables
 
 - DATABASE_URL
@@ -27,25 +37,26 @@ npm install
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-  to Markdown converter
-- [jQuery] - duh
+- [Next JS](https://nextjs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Prisma](https://www.prisma.io/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Features
 
-## Test Google Account
+- Create account with credentials, with google and with github
+- Create a listing to rent your house
+- Create a reservation at someone else's property
 
-- email: test1user@gmail.com
-- password: 12345678aB$
+## Test Google Account 🚨(pls read this)🚨
+
+This account is used to test the application in the deployment, since login with credentials and with GitHub do not work in production.
+
+First you must open your browser and log in to Google using this account, and then simply log in with Google in the clone the airbnb
+
+- Email: test1user@gmail.com
+- Password: 12345678aB$
 
 ## License
 
