@@ -2,7 +2,7 @@
 
 This is a clone of the official Airbnb clone
 
-**Deployment**: [Airbnb Clone 🏡](https://rent-properties-beta.vercel.app/)
+**Deployment**: [Airbnb Clone 🏡](https://rent-properties-now.vercel.app/)
 
 🚨 **Attention: Test account** 🚨
 
